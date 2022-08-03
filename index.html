@@ -11,15 +11,23 @@
 </head>
 <body>
   <header class="index-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <nav class="navbar navbar-expand-xl p-0">
+      <div class="container-fluid p-0">
+        <button class="navbar-toggler hamburger-menu collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+          <div class="bar-top"></div>
+          <div class="bar-middle"></div>
+          <div class="bar-bottom"></div>
+        </button>
+        <a class="d-block d-xl-none navbar-brand order-first order-md-0 mx-0 text-dark p-0" href="#">
+          <div class="logo d-flex gap-1 m-auto">
+            <img class="m-auto logo-img" src="assets/images/icons/home.svg" alt="Resto Logo"> Resto
+          </div>
+        </a>
+        <div class="collapse navbar-collapse w-100 custom-menu-bar">
+          <ul class="nav navbar-nav w-100 gap-4">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link dropdown-toggle custom-arrow down" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
+              <a class="nav-link dropdown-toggle custom-arrow down" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -30,10 +38,16 @@
             <li class="nav-item"><a class="nav-link" href="contact.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
           </ul>
-        
-          <form class="d-flex">
-            <div class="custom-search-input"><input class="form-control" type="search" placeholder="Search" aria-label="Search"></div>
-            <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+        <a class="d-none d-xl-block navbar-brand order-first order-md-0 mx-0 text-dark p-0" href="#">
+          <div class="logo d-flex gap-1 m-auto">
+            <img class="m-auto logo-img" src="assets/images/icons/home.svg" alt="Resto Logo"> Resto
+          </div>
+        </a>
+        <div class="collapse navbar-collapse w-100">
+          <form class="ms-auto d-flex gap-3">
+            <div class="custom-search-input"><input class="" type="search" placeholder="Search your favorite food" aria-label="Search"></div>
+            <button class="custom-search-button" type="submit">Search</button>
           </form>
         </div>
       </div>
