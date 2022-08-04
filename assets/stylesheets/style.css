@@ -26,7 +26,8 @@ body {
 }
 
 header.index-header {
-  margin-top: 60px;
+  padding-top: 60px;
+  margin-bottom: 60px;
 }
 /* Custome Navbar Menu */
 .custom-menu-bar ul li a {
@@ -51,7 +52,6 @@ div.logo {
   font-family: Nunito;
   font-size: 28px;
   font-weight: bold;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo .logo-img {
   height: 34px;
@@ -169,10 +169,139 @@ section,
 header {
   margin: 0 auto;
   margin-bottom: 120px;
-  /* margin-left: 60px;
-  margin-right: 60px; */
   max-width: calc(1440px - 120px);
 }
+
+section.restaurants-carousel > div {
+  width: calc(100% + 60px);
+}
+
+.restaurant-list {
+  height: 564px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.restaurant-list img {
+  top: 0;
+  left: 0;
+}
+
+.owl-item:not(.active) .restaurant-list {
+  margin-right: 80px;
+}
+
+.owl-item.active .restaurant-list {
+  margin-left: 80px;
+}
+
+.owl-item.active .restaurant-item .image-description {
+  display: block;
+  z-index: 1;
+}
+
+.restaurant-item .image-description {
+  display: none;
+}
+
+.restaurant-item .image-description {
+  width: 390px;
+  height: 297px;
+  border-radius: 24px;
+  padding: 24px;
+  background-color: #fff;
+  bottom: calc(50% - calc(297px / 2));
+}
+
+.restaurant-item .image-description .info {
+  padding-left: 30px !important;
+  position: relative;
+}
+.restaurant-item .image-description .info::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: unset;
+  margin: 0;
+  background: url("../images/icons/info.svg") no-repeat transparent center center;
+}
+
+.restaurant-item .image-description .row {
+  gap: 8px;
+}
+
+.restaurant-item .image-description .row .col-8 {
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  gap: 4px;
+}
+
+.restaurant-item .image-description .row .restaurant-rating {
+  display: flex;
+  gap: 4px;
+}
+
+.restaurant-item .image-description .row .restaurant-rating .rating-point {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.restaurant-item .image-description .row .restaurant-rating .rating-point img {
+  width: 16px;
+  height: 16px;
+}
+
+.restaurant-item .image-description .row .restaurant-rating .rating-point span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffb800;
+  font-weight: 600;
+}
+
+.restaurant-item .image-description .row .restaurant-rating .rating-people span {
+  font-size: 16px;
+  color: var(--color-secondary-dark);
+}
+
+.restaurant-item .image-description .row .restaurant-name span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.restaurant-item .image-description .row .restaurant-location {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.restaurant-item .image-description .row .restaurant-location img {
+  height: 24px;
+  width: 24px;
+}
+
+.restaurant-item .image-description .row .restaurant-location span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-secondary-dark);
+}
+
+.restaurant-item .image-description .row .link {
+  width: 238px;
+  height: 56px;
+  background-color: var(--color-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
 /* GLOBAL SECTION STYLE END */
 
 /* SPECIAL BENEFIT SECTION START */
