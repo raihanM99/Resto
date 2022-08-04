@@ -1,6 +1,6 @@
 :root {
-  --color-main: #FDC886;
-  --color-sub: #5A4FCF;
+  --color-main: #fdc886;
+  --color-sub: #5a4fcf;
   --color-half-main: rgba(253, 200, 134, 0.2);
   --color-half-sub: rgba(90, 79, 207, 0.1);
   --color-primary-dark: #232631;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 @font-face {
@@ -22,21 +22,21 @@ body {
 
 body {
   font-family: Poppins;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 header.index-header {
-  padding: 60px;
+  margin-top: 60px;
 }
 /* Custome Navbar Menu */
 .custom-menu-bar ul li a {
   color: #232631;
   font-weight: bold;
 }
-.custom-menu-bar ul li.active a{
+.custom-menu-bar ul li.active a {
   position: relative;
 }
-.custom-menu-bar ul li.active a::after{
+.custom-menu-bar ul li.active a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -59,7 +59,7 @@ div.logo {
 }
 /* Custom Arrow */
 .custom-arrow {
-  padding-right: 24px!important;
+  padding-right: 24px !important;
   position: relative;
 }
 .custom-arrow::after {
@@ -75,11 +75,20 @@ div.logo {
 .custom-arrow.down::after {
   transform: rotate(90deg);
 }
+.custom-arrow.main-color::after {
+  background: var(--color-main);
+  -webkit-mask-image: url("../images/icons/path.svg");
+  mask-image: url("../images/icons/path.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
 /* Custom Search */
 .custom-search-input {
   position: relative;
   color: #858585;
-  border: unset!important;
+  border: unset !important;
   font-size: 16px;
   font-weight: bold;
 }
@@ -88,11 +97,11 @@ div.logo {
   appearance: unset;
   -moz-appearance: unset;
   -webkit-appearance: unset;
-  padding-left: 62px!important;
+  padding-left: 62px !important;
   border-radius: 12px;
   height: 56px;
   width: 322px;
-  border: unset!important;
+  border: unset !important;
 }
 .custom-search-input::before {
   content: "";
@@ -116,14 +125,14 @@ div.logo {
 .custom-search-input input:focus-visible,
 .custom-search-button:focus {
   outline: unset;
-  border: solid 1px #858585!important;
+  border: solid 1px #858585 !important;
 }
 /* Humburger Menu */
 .hamburger-menu:focus-visible,
 .hamburger-menu:focus {
-  outline: unset!important;
-  border: unset!important;
-  box-shadow: unset!important;
+  outline: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
 }
 .hamburger-menu {
   display: flex;
@@ -148,7 +157,7 @@ div.logo {
   transform: rotate(45deg) translateY(-5px) translateX(4px);
 }
 .hamburger-menu:not(.collapsed) .bar-middle {
-  transform:translateX(1rem);
+  transform: translateX(1rem);
   opacity: 0;
 }
 .hamburger-menu:not(.collapsed) .bar-bottom {
@@ -156,10 +165,13 @@ div.logo {
 }
 
 /* GLOBAL SECTION STYLE START */
-section {
+section,
+header {
+  margin: 0 auto;
   margin-bottom: 120px;
-  margin-left: 60px;
-  margin-right: 60px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
+  max-width: calc(1440px - 120px);
 }
 /* GLOBAL SECTION STYLE END */
 
@@ -187,7 +199,7 @@ section {
 
 .special-benefit .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -315,7 +327,7 @@ section {
   height: 131px;
   border-radius: 24px;
   padding: 24px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .top-featured .card-image .image-description .row {
@@ -348,7 +360,7 @@ section {
 .top-featured .card-image .image-description .row .restaurant-rating .rating-point span {
   font-size: 16px;
   line-height: 24px;
-  color: #FFB800;
+  color: #ffb800;
   font-weight: 600;
 }
 
@@ -386,3 +398,352 @@ section {
   cursor: pointer;
 }
 /* TOP FEATURED RESTAURANT END */
+
+/* NEAREST RESTAURANT START */
+.nearest-restaurant .row:first-child {
+  position: relative;
+}
+.nearest-restaurant .title h5 {
+  color: var(--color-sub);
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.nearest-restaurant .title h2 {
+  color: var(--color-primary-dark);
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0;
+}
+
+.nearest-restaurant .select-location {
+  width: 252px;
+  height: 64px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  position: absolute;
+  right: 0;
+}
+
+.nearest-restaurant .restaurant-images {
+  gap: 20px;
+  margin-top: 34px;
+  margin-bottom: 56px;
+}
+
+.nearest-restaurant .restaurant-image {
+  width: 427px;
+  height: 415px;
+  border-radius: 24px;
+}
+
+.nearest-restaurant .restaurant-image .row:first-child {
+  /* margin-left: 24px;
+  margin-right: 24px; */
+  margin: 0 auto;
+  margin-top: 248px;
+  width: 379px;
+  height: 131px;
+  border-radius: 24px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.nearest-restaurant .restaurant-image:nth-child(1) {
+  background-image: url("../images/image_10.png");
+  background-size: cover;
+}
+
+.nearest-restaurant .restaurant-image:nth-child(2) {
+  background-image: url("../images/image_7.png");
+  background-size: cover;
+}
+
+.nearest-restaurant .restaurant-image:nth-child(3) {
+  background-image: url("../images/image_8.png");
+  background-size: cover;
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief {
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  gap: 4px;
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-rating {
+  display: flex;
+  gap: 4px;
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-rating .rating-point {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-rating .rating-point img {
+  width: 16px;
+  height: 16px;
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-rating .rating-point span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffb800;
+  font-weight: 600;
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-rating .rating-people span {
+  font-size: 16px;
+  color: var(--color-secondary-dark);
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-name span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-location {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.nearest-restaurant .restaurant-image .restaurant-brief .restaurant-location span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-secondary-dark);
+}
+
+.nearest-restaurant .restaurant-image .restaurant-link {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.nearest-restaurant .restaurant-all-link {
+  background-color: var(--color-main);
+  width: 238px;
+  padding: 16px 28px;
+  border-radius: 12px;
+}
+
+.nearest-restaurant .restaurant-all-link span {
+  font-weight: 600;
+}
+/* NEAREST RESTAURANT END */
+
+/* CHEF SUMMARY START */
+.chef-summary .chef-profile {
+  gap: 64px;
+}
+
+.chef-summary .chef-profile .picture {
+  position: relative;
+  padding: 0 60px;
+}
+
+.chef-summary .chef-profile .picture img.chef-picture {
+  width: 560px;
+  height: 848px;
+  border-radius: 24px;
+}
+
+.chef-summary .chef-profile .picture .chef-experience {
+  width: 179px;
+  height: 203px;
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chef-summary .chef-profile .picture .chef-experience .experience-icon {
+  background-color: var(--color-half-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.chef-summary .chef-profile .picture .chef-experience .experience-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.chef-summary .chef-profile .picture .chef-experience .experience-text h5 {
+  text-align: center;
+}
+
+.chef-summary .chef-profile .picture .chef-experience .experience-text h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0;
+}
+
+.chef-summary .chef-profile .picture .chef-experience .experience-text h6 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.chef-summary .chef-profile .picture .chef-work-place {
+  background-color: #fff;
+  width: 330px;
+  height: 180px;
+  border-radius: 24px;
+  padding: 24px;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chef-summary .chef-profile .picture .chef-work-place img {
+  border-radius: 12px;
+}
+
+.chef-summary .chef-profile .picture .chef-work-place .brief {
+  height: 103px;
+}
+
+.chef-summary .chef-profile .picture .chef-work-place .brief h6 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.chef-summary .chef-profile .picture .chef-work-place .brief h5 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.chef-summary .chef-profile .picture .chef-work-place .brief span.link {
+  color: var(--color-main);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.chef-summary .top-chefs .title {
+  margin-bottom: 32px;
+}
+
+.chef-summary .top-chefs .title h5 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0;
+}
+
+.chef-summary .top-chefs .title h6 {
+  color: var(--color-sub);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.chef-summary .top-chefs .chef-cards {
+  gap: 20px;
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 596px;
+  height: 141px;
+  border-radius: 24px;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card .text .specialist {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-secondary-dark);
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card .text .name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  color: var(--color-primary-dark);
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card .text .location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card .text .location span {
+  color: var(--color-secondary-dark);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card .link {
+  color: var(--color-main);
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card:hover {
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.chef-summary .top-chefs .chef-cards .chef-card:hover .link {
+  display: flex;
+  transition: 0.3s;
+}
+
+.chef-summary .top-chefs .show-all-chefs-link .link-btn {
+  background-color: var(--color-main);
+  width: 186px;
+  height: 56px;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* CHEF SUMMARY END */

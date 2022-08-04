@@ -1,179 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resto</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
-  <link rel="stylesheet" href="assets/stylesheets/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/stylesheets/style.css">
-</head>
-<body>
-  <header class="index-header">
-    <nav class="navbar navbar-expand-xl p-0">
-      <div class="container-fluid p-0">
-        <button class="navbar-toggler hamburger-menu collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-          <div class="bar-top"></div>
-          <div class="bar-middle"></div>
-          <div class="bar-bottom"></div>
-        </button>
-        <a class="d-block d-xl-none navbar-brand order-first order-md-0 mx-0 text-dark p-0" href="#">
-          <div class="logo d-flex gap-1 m-auto">
-            <img class="m-auto logo-img" src="assets/images/icons/home.svg" alt="Resto Logo"> Resto
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico" />
+    <link rel="stylesheet" href="assets/stylesheets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="index-header">
+      <nav class="navbar navbar-expand-xl p-0">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler hamburger-menu collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+            <div class="bar-top"></div>
+            <div class="bar-middle"></div>
+            <div class="bar-bottom"></div>
+          </button>
+          <a class="d-block d-xl-none navbar-brand order-first order-md-0 mx-0 text-dark p-0" href="#">
+            <div class="logo d-flex gap-1 m-auto"><img class="m-auto logo-img" src="assets/images/icons/home.svg" alt="Resto Logo" /> Resto</div>
+          </a>
+          <div class="collapse navbar-collapse w-100 custom-menu-bar">
+            <ul class="nav navbar-nav w-100 gap-4">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle custom-arrow down" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
+            </ul>
           </div>
-        </a>
-        <div class="collapse navbar-collapse w-100 custom-menu-bar">
-          <ul class="nav navbar-nav w-100 gap-4">
-            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link dropdown-toggle custom-arrow down" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
-          </ul>
-        </div>
-        <a class="d-none d-xl-block navbar-brand order-first order-md-0 mx-0 text-dark p-0" href="#">
-          <div class="logo d-flex gap-1 m-auto">
-            <img class="m-auto logo-img" src="assets/images/icons/home.svg" alt="Resto Logo"> Resto
+          <a class="d-none d-xl-block navbar-brand order-first order-md-0 mx-0 text-dark p-0" href="#">
+            <div class="logo d-flex gap-1 m-auto"><img class="m-auto logo-img" src="assets/images/icons/home.svg" alt="Resto Logo" /> Resto</div>
+          </a>
+          <div class="collapse navbar-collapse w-100">
+            <form class="ms-auto d-flex gap-3">
+              <div class="custom-search-input"><input class="" type="search" placeholder="Search your favorite food" aria-label="Search" /></div>
+              <button class="custom-search-button" type="submit">Search</button>
+            </form>
           </div>
-        </a>
-        <div class="collapse navbar-collapse w-100">
-          <form class="ms-auto d-flex gap-3">
-            <div class="custom-search-input"><input class="" type="search" placeholder="Search your favorite food" aria-label="Search"></div>
-            <button class="custom-search-button" type="submit">Search</button>
-          </form>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!-- SPECIAL BENEFIT SECTION START -->
-  <section>
-    <div class="container-fluid special-benefit">
-      <div class="row title">
-        <div class="col-12 d-flex text-center flex-column">
-          <h5>SPECIAL BENEFIT FOR YOU</h5>
-          <h2>Why Should Choose Us?</h2>
+    <!-- SPECIAL BENEFIT SECTION START -->
+    <section>
+      <div class="container-fluid special-benefit">
+        <div class="row title">
+          <div class="col-12 d-flex text-center flex-column">
+            <h5>SPECIAL BENEFIT FOR YOU</h5>
+            <h2>Why Should Choose Us?</h2>
+          </div>
+        </div>
+        <div class="row cards text-center">
+          <div class="col-md-3 card">
+            <div class="card-icon">
+              <img src="assets/images/icons/discount.svg" alt="discount-icon" />
+            </div>
+            <div class="card-text">
+              <h3>Extra Discounts</h3>
+              <span
+                >Get your special discount by <br />
+                using our reservation</span
+              >
+            </div>
+            <div class="card-button active">
+              <span class="custom-arrow">View Details</span>
+            </div>
+          </div>
+          <div class="col-md-3 card">
+            <div class="card-icon">
+              <img src="assets/images/icons/spoon-fork.svg" alt="discount-icon" />
+            </div>
+            <div class="card-text">
+              <h3>Come and Eat</h3>
+              <span
+                >Get your own table quickly & <br />
+                without waiting in line</span
+              >
+            </div>
+            <div class="card-button">
+              <span class="custom-arrow">View Details</span>
+            </div>
+          </div>
+          <div class="col-md-3 card">
+            <div class="card-icon">
+              <img src="assets/images/icons/no_money.svg" alt="discount-icon" />
+            </div>
+            <div class="card-text">
+              <h3>No Extra Fee</h3>
+              <span
+                >Get tax free if you want to order <br />
+                food and make a reservation</span
+              >
+            </div>
+            <div class="card-button">
+              <span class="custom-arrow">View Details</span>
+            </div>
+          </div>
+          <div class="col-md-3 card">
+            <div class="card-icon">
+              <img src="assets/images/icons/blinks.svg" alt="discount-icon" />
+            </div>
+            <div class="card-text">
+              <h3>Guaranteed Cleanliness</h3>
+              <span
+                >We ensure the cleanliness of the <br />
+                place as well as the food</span
+              >
+            </div>
+            <div class="card-button">
+              <span class="custom-arrow">View Details</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row cards text-center">
-        <div class="col-md-3 card">
-          <div class="card-icon">
-            <img src="assets/images/icons/discount.svg" alt="discount-icon">
-          </div>
-          <div class="card-text">
-            <h3>Extra Discounts</h3>
-            <span>Get your special discount by <br> using our reservation</span>
-          </div>
-          <div class="card-button active">
-            <span class="custom-arrow">View Details</span>
-          </div>
-        </div>
-        <div class="col-md-3 card">
-          <div class="card-icon">
-            <img src="assets/images/icons/spoon-fork.svg" alt="discount-icon">
-          </div>
-          <div class="card-text">
-            <h3>Come and Eat</h3>
-            <span>Get your own table quickly & <br> without waiting in line</span>
-          </div>
-          <div class="card-button">
-            <span class="custom-arrow">View Details</span>
-          </div>
-        </div>
-        <div class="col-md-3 card">
-          <div class="card-icon">
-            <img src="assets/images/icons/no_money.svg" alt="discount-icon">
-          </div>
-          <div class="card-text">
-            <h3>No Extra Fee</h3>
-            <span>Get tax free if you want to order <br> food and make a reservation</span>
-          </div>
-          <div class="card-button">
-            <span class="custom-arrow">View Details</span>
-          </div>
-        </div>
-        <div class="col-md-3 card">
-          <div class="card-icon">
-            <img src="assets/images/icons/blinks.svg" alt="discount-icon">
-          </div>
-          <div class="card-text">
-            <h3>Guaranteed Cleanliness</h3>
-            <span>We ensure the cleanliness of the <br> place as well as the food</span>
-          </div>
-          <div class="card-button">
-            <span class="custom-arrow">View Details</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- SPECIAL BENEFIT SECTION END -->
+    </section>
+    <!-- SPECIAL BENEFIT SECTION END -->
 
-  <!-- TOP FEATURED RESTAURANT SECTION START -->
-  <section>
-    <div class="container-fluid top-featured">
-      <div class="row justify-content-between">
-        <div class="col-md-4 d-flex align-items-center">
-          <div class="d-flex flex-column">
-            <div class="d-flex flex-column title">
-              <h5>TOP 3 FEATURED RESTAURANT</h5>
-              <h2>Most Popular Restaurants</h2>
-            </div>
-            <div class="description">
-              <p>The best restaurant in our opinion is how <br> much customers like it in terms of place, <br> price, comfort and of course the taste of <br> the food itself.</p>
-            </div>
-            <div class="link">
-              <span class="custom-arrow">View All Restaurant</span>
+    <!-- TOP FEATURED RESTAURANT SECTION START -->
+    <section>
+      <div class="container-fluid top-featured">
+        <div class="row justify-content-between">
+          <div class="col d-flex align-items-center">
+            <div class="d-flex flex-column w-100">
+              <div class="d-flex flex-column title">
+                <h5>TOP 3 FEATURED RESTAURANT</h5>
+                <h2>Most Popular Restaurants</h2>
+              </div>
+              <div class="description">
+                <p>
+                  The best restaurant in our opinion is how <br />
+                  much customers like it in terms of place, <br />
+                  price, comfort and of course the taste of <br />
+                  the food itself.
+                </p>
+              </div>
+              <div class="link">
+                <span class="custom-arrow">View All Restaurant</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 card-images">
-          <div class="card-image active">
-            <div class="image-description">
-              <div class="row flex-nowrap align-items-center">
-                <div class="col-8">
-                  <div class="restaurant-rating">
-                    <div class="rating-point">
-                      <img src="assets/images/icons/Star 1.svg" alt="star-icon">
-                      <span>5.0</span>
+          <div class="col-md-8 card-images">
+            <div class="card-image active">
+              <div class="image-description">
+                <div class="row flex-nowrap align-items-center">
+                  <div class="col-8">
+                    <div class="restaurant-rating">
+                      <div class="rating-point">
+                        <img src="assets/images/icons/Star 1.svg" alt="star-icon" />
+                        <span>5.0</span>
+                      </div>
+                      <div class="rating-people">
+                        <span>(7.6K+)</span>
+                      </div>
                     </div>
-                    <div class="rating-people">
-                      <span>(7.6K+)</span>
+                    <div class="restaurant-name">
+                      <span>Bind Balorant</span>
+                    </div>
+                    <div class="restaurant-location">
+                      <img src="assets/images/icons/location.svg" alt="location" />
+                      <span>Jakarta, Indonesia</span>
                     </div>
                   </div>
-                  <div class="restaurant-name">
-                    <span>Bind Balorant</span>
-                  </div>
-                  <div class="restaurant-location">
-                    <img src="assets/images/icons/location.svg" alt="location">
-                    <span>Jakarta, Indonesia</span>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="restaurant-link">
-                    <img src="assets/images/icons/arrow_right.svg" alt="arrow-right">
+                  <div class="col-4">
+                    <div class="restaurant-link">
+                      <img src="assets/images/icons/arrow_right.svg" alt="arrow-right" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card-image">
-          </div>
-          <div class="card-image">
+            <div class="card-image"></div>
+            <div class="card-image"></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- TOP FEATURED RESTAURANT SECTION END -->
-  <script type="text/javascript" src="assets/javascripts/bootstrap/bootstrap.bundle.min.js"></script>
-</body>
+    </section>
+    <!-- TOP FEATURED RESTAURANT SECTION END -->
+
+    <!-- NEAREST RESTAURANT SECTION START -->
+    <section>
+      <div class="container-fluid nearest-restaurant">
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+            <div class="title">
+              <h5>RESTAURANT BASED BY CITY</h5>
+              <h2>Restaurant Near You</h2>
+            </div>
+          </div>
+          <div class="col-md-4 text-end">
+            <div class="select-location">
+              <img src="assets/images/icons/location.svg" alt="location-icon" />
+              <span class="custom-arrow down">Jakarta, Indonesia</span>
+            </div>
+          </div>
+        </div>
+        <div class="row restaurant-images justify-content-between flex-nowrap">
+          <div class="col-4 restaurant-image">
+            <div class="row flex-nowrap align-items-center">
+              <div class="col-8 restaurant-brief">
+                <div class="restaurant-rating">
+                  <div class="rating-point">
+                    <img src="assets/images/icons/Star 1.svg" alt="star-icon" />
+                    <span>5.0</span>
+                  </div>
+                  <div class="rating-people">
+                    <span>(6.6K+)</span>
+                  </div>
+                </div>
+                <div class="restaurant-name">
+                  <span>Bind Balorant</span>
+                </div>
+                <div class="restaurant-location">
+                  <span>IDR 29.000 - IDR 259.999</span>
+                </div>
+              </div>
+              <div class="col-4 restaurant-link">
+                <img src="assets/images/icons/arrow_right.svg" alt="arrow-right" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 restaurant-image">
+            <div class="row flex-nowrap align-items-center">
+              <div class="col-8 restaurant-brief">
+                <div class="restaurant-rating">
+                  <div class="rating-point">
+                    <img src="assets/images/icons/Star 1.svg" alt="star-icon" />
+                    <span>5.0</span>
+                  </div>
+                  <div class="rating-people">
+                    <span>(3.6K+)</span>
+                  </div>
+                </div>
+                <div class="restaurant-name">
+                  <span>Split Ascent Restaurant</span>
+                </div>
+                <div class="restaurant-location">
+                  <span>IDR 49.999 - IDR 560.000</span>
+                </div>
+              </div>
+              <div class="col-4 restaurant-link">
+                <img src="assets/images/icons/arrow_right.svg" alt="arrow-right" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 restaurant-image">
+            <div class="row flex-nowrap align-items-center">
+              <div class="col-8 restaurant-brief">
+                <div class="restaurant-rating">
+                  <div class="rating-point">
+                    <img src="assets/images/icons/Star 1.svg" alt="star-icon" />
+                    <span>5.0</span>
+                  </div>
+                  <div class="rating-people">
+                    <span>(11K+)</span>
+                  </div>
+                </div>
+                <div class="restaurant-name">
+                  <span>Daza Fracture Restaurant</span>
+                </div>
+                <div class="restaurant-location">
+                  <span>IDR 29.999 - IDR 560.000</span>
+                </div>
+              </div>
+              <div class="col-4 restaurant-link">
+                <img src="assets/images/icons/arrow_right.svg" alt="arrow-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="restaurant-all-link">
+            <span class="custom-arrow">View All Restaurant</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEAREST RESTAURANT SECTION END -->
+
+    <!-- CHEF SUMMARY SECTION START -->
+    <section>
+      <div class="container-fluid chef-summary">
+        <div class="row flex-nowrap chef-profile">
+          <div class="col-6 picture">
+            <img class="chef-picture" src="assets/images/image_9.png" alt="chef-picture" />
+            <div class="chef-experience">
+              <div class="experience-icon">
+                <img src="assets/images/icons/shield_done.svg" alt="experience-icon" />
+              </div>
+              <div class="experience-text">
+                <h5>12 Years</h5>
+                <h6>Experience</h6>
+              </div>
+            </div>
+            <div class="chef-work-place">
+              <img src="assets/images/image_6.png" alt="restaurant" width="99" height="132" />
+              <div class="brief">
+                <h6>Chef at restaurant:</h6>
+                <h5>Pearl Dolphin</h5>
+                <span class="custom-arrow main-color link">View Details</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 top-chefs d-flex flex-column justify-content-between">
+            <div>
+              <div class="row title">
+                <div class="col-12">
+                  <h6>TOP 4 EXPERT CHEFS</h6>
+                  <h5>Expert Chefs in Fuddy</h5>
+                </div>
+              </div>
+              <div class="row chef-cards">
+                <div class="col-12 chef-card">
+                  <div class="text">
+                    <span class="specialist">PIZZA</span>
+                    <span class="name">Phoenix Satcheup</span>
+                    <div class="location">
+                      <img src="assets/images/icons/location.svg" alt="location-icon" />
+                      <span>Jakarta, Indonesia</span>
+                    </div>
+                  </div>
+                  <div class="link">
+                    <span class="custom-arrow main-color">Profile Details</span>
+                  </div>
+                </div>
+                <div class="col-12 chef-card">
+                  <div class="text">
+                    <span class="specialist">VEGAN</span>
+                    <span class="name">Chamber Botfrag</span>
+                    <div class="location">
+                      <img src="assets/images/icons/location.svg" alt="location-icon" />
+                      <span>Bandung, Indonesia</span>
+                    </div>
+                  </div>
+                  <div class="link">
+                    <span class="custom-arrow main-color">Profile Details</span>
+                  </div>
+                </div>
+                <div class="col-12 chef-card">
+                  <div class="text">
+                    <span class="specialist">ROAST CHICKEN</span>
+                    <span class="name">Asep Vandal</span>
+                    <div class="location">
+                      <img src="assets/images/icons/location.svg" alt="location-icon" />
+                      <span>Sunda, Indonesia</span>
+                    </div>
+                  </div>
+                  <div class="link">
+                    <span class="custom-arrow main-color">Profile Details</span>
+                  </div>
+                </div>
+                <div class="col-12 chef-card">
+                  <div class="text">
+                    <span class="specialist">BEEF STEAK</span>
+                    <span class="name">I Made Invoker</span>
+                    <div class="location">
+                      <img src="assets/images/icons/location.svg" alt="location-icon" />
+                      <span>Bali, Indonesia</span>
+                    </div>
+                  </div>
+                  <div class="link">
+                    <span class="custom-arrow main-color">Profile Details</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row show-all-chefs-link">
+              <div class="col-12 link-btn">
+                <span class="custom-arrow">View All Chef</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CHEF SUMMARY SECTION END -->
+    <script type="text/javascript" src="assets/javascripts/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
