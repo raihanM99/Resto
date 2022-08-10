@@ -20,4 +20,6 @@ $(function() {
       responsive_content();
     });
   });
+  
+  AOS.init();
 });

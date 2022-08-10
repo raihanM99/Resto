@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/stylesheets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/stylesheets/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/stylesheets/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/stylesheets/aos/aos.css" />
     <link rel="stylesheet" href="assets/stylesheets/style.css" />
   </head>
   <body>
@@ -54,11 +55,11 @@
 
     <main>
       <!-- RESTAURANTS CAROUSEL START -->
-      <section class="restaurants-carousel position-relative">
+      <section data-aos="zoom-in-right" class="restaurants-carousel position-relative">
         <div class="container-fluid special-benefit position-absolute p-0">
           <div class="owl-carousel owl-theme">
             <div class="item restaurant-item">
-              <div class="image-description position-absolute">
+              <div data-aos="zoom-in-right" data-aos-delay="200" class="image-description position-absolute">
                 <div class="row flex-column h-100 justify-content-between">
                   <div class="col-12">
                     <div class="restaurant-rating">
@@ -119,7 +120,7 @@
             </div>
           </div>
           <div class="row cards text-center">
-            <div class="col-md-3 card">
+            <div data-aos="zoom-out-up" class="col-md-3 card">
               <div class="card-icon">
                 <img src="assets/images/icons/discount.svg" alt="discount-icon" />
               </div>
@@ -134,7 +135,7 @@
                 <span class="custom-arrow">View Details</span>
               </div>
             </div>
-            <div class="col-md-3 card">
+            <div data-aos="zoom-out-up" data-aos-delay="100" class="col-md-3 card">
               <div class="card-icon">
                 <img src="assets/images/icons/spoon-fork.svg" alt="discount-icon" />
               </div>
@@ -149,7 +150,7 @@
                 <span class="custom-arrow">View Details</span>
               </div>
             </div>
-            <div class="col-md-3 card">
+            <div data-aos="zoom-out-up" data-aos-delay="200" class="col-md-3 card">
               <div class="card-icon">
                 <img src="assets/images/icons/no_money.svg" alt="discount-icon" />
               </div>
@@ -164,7 +165,7 @@
                 <span class="custom-arrow">View Details</span>
               </div>
             </div>
-            <div class="col-md-3 card">
+            <div data-aos="zoom-out-up" data-aos-delay="300" class="col-md-3 card">
               <div class="card-icon">
                 <img src="assets/images/icons/blinks.svg" alt="discount-icon" />
               </div>
@@ -188,7 +189,7 @@
       <section>
         <div class="container-fluid top-featured">
           <div class="row justify-content-between">
-            <div class="col d-flex align-items-center">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col d-flex align-items-center">
               <div class="d-flex flex-column w-100">
                 <div class="d-flex flex-column title">
                   <h5>TOP 3 FEATURED RESTAURANT</h5>
@@ -208,8 +209,8 @@
               </div>
             </div>
             <div class="col-md-8 card-images">
-              <div class="card-image active">
-                <div class="image-description">
+              <div data-aos="zoom-in-left" data-aos-delay="300" class="card-image active">
+                <div data-aos="fade-up" data-aos-delay="450" class="image-description">
                   <div class="row flex-nowrap align-items-center">
                     <div class="col-8">
                       <div class="restaurant-rating">
@@ -237,8 +238,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card-image"></div>
-              <div class="card-image"></div>
+              <div data-aos="zoom-in-left" data-aos-delay="200" class="card-image"></div>
+              <div data-aos="zoom-in-left" data-aos-delay="100" class="card-image"></div>
             </div>
           </div>
         </div>
@@ -263,8 +264,8 @@
             </div>
           </div>
           <div class="row restaurant-images justify-content-between flex-nowrap">
-            <div class="col-4 restaurant-image">
-              <div class="row flex-nowrap align-items-center">
+            <div data-aos="zoom-in" class="col-4 restaurant-image">
+              <div data-aos="fade-up" data-aos-delay="200" class="row flex-nowrap align-items-center">
                 <div class="col-8 restaurant-brief">
                   <div class="restaurant-rating">
                     <div class="rating-point">
@@ -288,8 +289,8 @@
               </div>
             </div>
 
-            <div class="col-4 restaurant-image">
-              <div class="row flex-nowrap align-items-center">
+            <div data-aos="zoom-in" class="col-4 restaurant-image">
+              <div data-aos="fade-up" data-aos-delay="200" class="row flex-nowrap align-items-center">
                 <div class="col-8 restaurant-brief">
                   <div class="restaurant-rating">
                     <div class="rating-point">
@@ -313,8 +314,8 @@
               </div>
             </div>
 
-            <div class="col-4 restaurant-image">
-              <div class="row flex-nowrap align-items-center">
+            <div data-aos="zoom-in" class="col-4 restaurant-image">
+              <div data-aos="fade-up" data-aos-delay="200" class="row flex-nowrap align-items-center">
                 <div class="col-8 restaurant-brief">
                   <div class="restaurant-rating">
                     <div class="rating-point">
@@ -338,7 +339,7 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div data-aos="fade-down" class="row justify-content-center">
             <div class="restaurant-all-link">
               <span class="custom-arrow">View All Restaurant</span>
             </div>
@@ -352,8 +353,8 @@
         <div class="container-fluid chef-summary">
           <div class="row flex-nowrap chef-profile">
             <div class="col-6 picture">
-              <img class="chef-picture" src="assets/images/image_9.png" alt="chef-picture" />
-              <div class="chef-experience">
+              <img data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine" class="chef-picture" src="assets/images/image_9.png" alt="chef-picture" />
+              <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-sine" class="chef-experience">
                 <div class="experience-icon">
                   <img src="assets/images/icons/shield_done.svg" alt="experience-icon" />
                 </div>
@@ -362,7 +363,7 @@
                   <h6>Experience</h6>
                 </div>
               </div>
-              <div class="chef-work-place">
+              <div data-aos="fade-right" data-aos-duration="1000" class="chef-work-place">
                 <img src="assets/images/image_6.png" alt="restaurant" width="99" height="132" />
                 <div class="brief">
                   <h6>Chef at restaurant:</h6>
@@ -449,6 +450,7 @@
     <script type="text/javascript" src="assets/javascripts/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascripts/owl-carousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/javascripts/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/aos/aos.js"></script>
     <script type="text/javascript" src="assets/javascripts/script.js"></script>
   </body>
 </html>
