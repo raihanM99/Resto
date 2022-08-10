@@ -572,6 +572,7 @@ section.restaurants-carousel > div {
 .nearest-restaurant .restaurant-image .row:first-child {
   /* margin-left: 24px;
   margin-right: 24px; */
+  justify-content: space-between;
   margin: 0 auto;
   margin-top: 248px;
   width: 379px;
